@@ -3,7 +3,7 @@ name: 'ZJU-nCov-Hitcarder Action'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 23 * * *'
 
 jobs:
   main:
@@ -12,7 +12,7 @@ jobs:
       fail-fast: true
       matrix:
         include:
-          - username: ZJU_USERNAME
+          - username: ZJU_USERNAME 
             password: ZJU_PASSWORD
             dingtalk_token: DINGTALK_TOKEN
             pushplus_token: PUSHPLUS_TOKEN
